@@ -1,10 +1,135 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>• Work in progress</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnerOS - What The Next ...</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="before.js" type="text/javascript" id="bef"></script>
 </head>
-<body>
-<h3>Waiting for theme ...</h3>
-<span>Project repository: </span><a href="//github.com/OnerOS-Project">Github</a>
+<body class="load">
+    <div class="loading" id="page-loader">
+        <div class="animation">
+            <div class="part">
+                <div class="square" id="sq1"></div>
+                <div class="square" id="sq2"></div>
+            </div>
+            <div class="part">
+                <div class="square" id="sq4"></div>
+                <div class="square" id="sq3"></div>
+            </div>
+            <h3>OnerOS - One OS for more devices</h3>
+        </div>
+    </div>
+    <header>
+        <span id="logo">OnerOS</span>
+        <div id="menu-try"><i class="bi bi-arrow-down"></i>Try OS</div>
+        <div id="menu">
+            <span id="reddit"><i class="bi bi-reddit"></i></span>
+            <span id="discord"><i class="bi bi-discord"></i></span>
+            <span id="github"><i class="bi bi-github"></i><span>Github<span></span>
+        </div>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,170.7C384,128,480,64,576,85.3C672,107,768,213,864,234.7C960,256,1056,192,1152,170.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <center class="content">
+        <div class="container">
+            <h1 class="t1">Your Future Revolution</h1>
+            <div class="g1">
+                <div class="p1">
+                    <div class="frame">
+                        <img src="https://source.unsplash.com/336x205/?japanese_city"/>
+                    </div>
+                    <p>Image Description 1</p>
+                    <p>Image Description 1</p>
+                    <p>Image Description 1</p>
+                </div>
+                <div class="p1">
+                    <div class="frame">
+                        <img src="https://source.unsplash.com/336x205/?tokyo_city"/>
+                    </div>
+                    <p>Image Description 2</p>
+                    <p>Image Description 2</p>
+                    <p>Image Description 2</p>
+                </div>
+                <div class="p1">
+                    <div class="frame">
+                        <img src="https://source.unsplash.com/336x205/?dubai_city"/>
+                    </div>
+                    <p>Image Description 3</p>
+                    <p>Image Description 3</p>
+                    <p>Image Description 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="txt">
+                <h2 class="t2">Customize Layout</h2>
+                <p>Text for Container 2</p>
+                <p>About Image Description</p>
+                <p>About Image Description</p>
+            </div>
+            <div class="p2">
+                <div class="frame">
+                    <img src="https://source.unsplash.com/544x357/?newyork_city"/>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="p3">
+                <div class="frame">
+                    <img src="https://source.unsplash.com/544x357/?warsaw_city"/>
+                </div>
+            </div>
+            <div class="txt">
+                <h2 class="t2">Powerful Usage</h2>
+                <p>Text for Container 3</p>
+                <p>About Image Description</p>
+                <p>About Image Description</p>
+            </div>
+        </div>
+        <div class="container4">
+            <div id="download-os">
+                <h1 class="t1">Don't Wait</h1>
+                <h3 class="t2">Test & Review</h3>
+                <button id="download"><i class="bi bi-download"></i>Download</button>
+            </div>
+            <div id="try-os">
+                <h1 class="t1">Hmm...</h1>
+                <h3 class="t2">Try before install</h3>
+                <button id="web-try"><i class="bi bi-globe-americas"></i>Web Preview</button>
+            </div>
+        </div>
+        <div class="container5">
+            <h1 class="t1">Do you like this project?</h1>
+            <h3 class="t2">Would you like to support</h3>
+            <div class="btns" style="display: flex;justify-content: center;">
+                <div class="btn pr" id="btn-pr">
+                    <svg aria-hidden="true" height="32" viewBox="1 0 16 16" version="1.1" width="32" data-view-component="true" class="pr-svg">
+                        <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
+                    </svg>
+                    <span>Pull Request</span>
+                </div>
+                <div class="btn pt" id="btn-pt">
+                    <svg width="32" height="32" viewBox="0 -4.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" class="pt-svg">
+                        <path d="M45.1355837,0 L45.1355837,246.35001 L0,246.35001 L0,0 L45.1355837,0 Z M163.657111,0 C214.65668,0 256,41.3433196 256,92.3428889 C256,143.342458 214.65668,184.685778 163.657111,184.685778 C112.657542,184.685778 71.3142222,143.342458 71.3142222,92.3428889 C71.3142222,41.3433196 112.657542,0 163.657111,0 Z"></path>
+                    </svg>
+                    <span>Patreon<span>
+                </div>
+                <div class="btn pp" id="btn-pp">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="pp-svg">
+                        <path d="M10.962 18.494c-0.219 1.2-1.087 6.794-1.344 8.375-0.019 0.113-0.063 0.156-0.188 0.156h-4.662c-0.475 0-0.819-0.412-0.756-0.869l3.663-23.244c0.094-0.6 0.631-1.056 1.25-1.056 9.519 0 10.319-0.231 12.75 0.713 3.756 1.456 4.1 4.969 2.75 8.769-1.344 3.913-4.531 5.594-8.756 5.644-2.712 0.044-4.344-0.438-4.706 1.512zM26.319 9.5c-0.113-0.081-0.156-0.113-0.188 0.081-0.125 0.712-0.319 1.406-0.55 2.1-2.494 7.113-9.406 6.494-12.781 6.494-0.381 0-0.631 0.206-0.681 0.587-1.412 8.775-1.694 10.606-1.694 10.606-0.063 0.444 0.219 0.806 0.662 0.806h3.969c0.538 0 0.981-0.394 1.088-0.931 0.044-0.337-0.069 0.381 0.9-5.706 0.288-1.375 0.894-1.231 1.831-1.231 4.438 0 7.9-1.8 8.931-7.019 0.406-2.175 0.288-4.463-1.487-5.788z"/>
+                    </svg>
+                    <span>PayPal</span>
+                </div>
+            </div>
+        </div>
+    </center>
+    <svg class="rotated footer-padding" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,170.7C384,128,480,64,576,85.3C672,107,768,213,864,234.7C960,256,1056,192,1152,170.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <footer>
+        <h3>Copyright &copy; 2023 - OnerOS Team by Klubuntu</h3>
+    </footer>
+    <script src="functions.js" type="text/javascript"></script>
 </body>
-</head>
 </html>
