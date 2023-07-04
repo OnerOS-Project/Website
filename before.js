@@ -7,10 +7,10 @@ function switchSquare(square){
 }
 function animSquare(square){
     if(square == 5){square = 1}
-    console.log("Square |", square)
+    // console.log("Square |", square)
     oldSquare = square - 1
     if (oldSquare == 0){oldSquare = 4}
-    console.log("OLD Square |", oldSquare)
+    // console.log("OLD Square |", oldSquare)
     document.getElementById("sq" + oldSquare).setAttribute("class", "square")
     getSquare = document.getElementById("sq" + square)
     getSquare.setAttribute("class", "square animated") 

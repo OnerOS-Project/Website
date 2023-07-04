@@ -28,6 +28,9 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .loading .animation h3{
@@ -40,6 +43,9 @@
 
 .loading .animation .part{
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .loading .animation .square{
@@ -221,6 +227,9 @@ center .p1{
     align-content: center;
     justify-content: center;
     align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .container4 h1{
@@ -359,8 +368,23 @@ center p{
         margin-top: -3.9vh;
     }
 }
-
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 2500px){
+    #download-os,
+    #try-os{
+        scroll-margin-top: 142px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+@media only screen and (min-width: 2000px) and (max-width: 2500px){
+    #download-os,
+    #try-os{
+        scroll-margin-top: 136px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+@media only screen and (min-width: 950px) and (max-width: 2000px){
     #download-os,
     #try-os{
         scroll-margin-top: 130px;
@@ -445,6 +469,9 @@ center p{
         align-content: center;
         align-items: center;
         flex-direction: column;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
     }
     .container5 .btn{
         margin-top: 4px;
