@@ -1,0 +1,23 @@
+@media (max-width: 1024px) {
+  :root {
+    --section-gap: var(--space-20);
+    --section-padding: var(--space-12);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-gap: var(--space-16);
+    --section-padding: var(--space-10);
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: var(--space-8);
+  }
+}

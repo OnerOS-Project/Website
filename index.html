@@ -1,152 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnerOS - What The Next ...</title>
-    <meta name="twitter:card" content="OnerOS - Future Technology. 0ne OS for more devices">
-    <meta name="og:title" property="og:title" content="OnerOS - Future Technology. 0ne OS for more devices">
-    <meta name="title" content="OnerOS - The future 0ne OS for more devices">
-    <meta name="description" content="Do you like multiplatform & using software/apps from other Operating Systems (etc. Windows,Linux,Android)">
-    <meta name="keywords" content="software,apps,one,os,operating,system,cross,platform,win,windows,lin,linux,and,android,bluestacks,technology,original,concept,more,devices,multiplatform,other,test,new,try,kernel,custom,customizable">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="3 days">
-    <meta name="author" content="OnerOS by Klubuntu">
-    <link rel="canonical" href="https://oneros.netlify.app">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <!--[if IE]>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <![endif]-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="min/style.min.css">
-    <script src="min/before.min.js" type="text/javascript" id="bef"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <title>OnerOS — An Open-Source Web Operating System Experience</title>
+  <meta name="description" content="OnerOS is an open-source web operating system experience. Window management, 7 visual themes, built-in applications, and the Fluent Valley design language — all running in your browser.">
+  <meta name="keywords" content="OnerOS, web operating system, open source, window management, Fluent Valley, web desktop, browser OS, Linux, themes">
+  <meta name="author" content="OnerOS Project by Klubuntu">
+  <meta name="theme-color" content="#0f1115">
+  <meta property="og:title" content="OnerOS — An Open-Source Web Operating System Experience">
+  <meta property="og:description" content="Window management, 7 visual themes, built-in applications, and the Fluent Valley design language — all running in your browser.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oneros.in">
+  <meta property="og:image" content="https://oneros.in/og-image.svg">
+  <meta property="og:image:alt" content="OnerOS — web operating system with Fluent Valley design">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="OnerOS">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OnerOS — An Open-Source Web Operating System Experience">
+  <meta name="twitter:description" content="Window management, 7 visual themes, built-in applications, and the Fluent Valley design language — all running in your browser.">
+  <meta name="twitter:image" content="https://oneros.in/og-image.svg">
+  <link rel="canonical" href="https://oneros.in">
+  <meta name="google-site-verification" content="googlea578bc69cf8d1f9a.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/logo-mark.svg">
+  <link rel="stylesheet" href="/css/tokens/colors.css">
+  <link rel="stylesheet" href="/css/tokens/typography.css">
+  <link rel="stylesheet" href="/css/tokens/spacing.css">
+  <link rel="stylesheet" href="/css/tokens/shadows.css">
+  <link rel="stylesheet" href="/css/tokens/motion.css">
+  <link rel="stylesheet" href="/css/tokens/surfaces.css">
+  <link rel="stylesheet" href="/css/globals.css">
+  <link rel="stylesheet" href="/css/components/navigation.css">
+  <link rel="stylesheet" href="/css/components/search.css">
+  <link rel="stylesheet" href="/css/components/surfaces.css">
+  <link rel="stylesheet" href="/css/sections/hero.css">
+  <link rel="stylesheet" href="/css/sections/features.css">
+  <link rel="stylesheet" href="/css/sections/preview.css">
+  <link rel="stylesheet" href="/css/sections/ecosystem.css">
+  <link rel="stylesheet" href="/css/sections/opensource.css">
+  <link rel="stylesheet" href="/css/sections/themes.css">
+  <link rel="stylesheet" href="/css/sections/apps.css">
+  <link rel="stylesheet" href="/css/sections/footer.css">
+  <link rel="stylesheet" href="/css/responsive.css">
 </head>
-<body class="load">
-    <div class="loading" id="page-loader">
-        <div class="animation">
-            <div class="part">
-                <div class="square" id="sq1"></div>
-                <div class="square" id="sq2"></div>
-            </div>
-            <div class="part">
-                <div class="square" id="sq4"></div>
-                <div class="square" id="sq3"></div>
-            </div>
-            <h3>OnerOS - One OS for more devices</h3>
-        </div>
+<body>
+
+  <div class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Fluent Valley
+      </div>
+      <div class="hero__logo" aria-label="OnerOS">
+        <img src="/assets/logo.svg" alt="" width="280" height="93" class="hero__logo-img">
+      </div>
+      <h1 class="hero__title sr-only">OnerOS — One OS For Your Devices</h1>
+      <p class="hero__tagline">One OS For Your Devices</p>
+      <p class="hero__subtitle">
+        A web-based desktop experience with window management, themed applications,
+        and a unique design language — all running in your browser.
+      </p>
+      <div class="hero__actions">
+        <a href="https://web-oneros.netlify.app" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Try OnerOS Web Preview
+        </a>
+        <a href="https://github.com/OnerOS-project" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
     </div>
-    <header>
-        <span id="logo">OnerOS</span>
-        <div id="menu-try"><i class="bi bi-arrow-down"></i>Try OS</div>
-        <div id="menu">
-            <span id="reddit"><i class="bi bi-reddit"></i></span>
-            <span id="discord"><i class="bi bi-discord"></i></span>
-            <span id="github"><i class="bi bi-github"></i><span>Github<span></span>
+    <div class="hero__preview" id="hero-preview">
+      <div class="hero__preview-frame">
+        <img src="/img/hero-preview.png" alt="OnerOS Web Preview 3.1.0 — Fluent Valley with KDialer, MPlayer, and time widgets running in themed windows" width="1920" height="993" loading="eager">
+        <div class="hero__preview-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span>Scroll to explore</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </div>
+
+  <main>
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            System Features
+          </div>
+          <h2 class="section-title">Built Like an Operating System</h2>
+          <p class="section-desc">
+            OnerOS brings desktop-class interaction patterns to the browser.
+            Every feature is designed to feel spatial, responsive, and alive.
+          </p>
         </div>
-    </header>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,170.7C384,128,480,64,576,85.3C672,107,768,213,864,234.7C960,256,1056,192,1152,170.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-    <center class="content">
-        <div class="container">
-            <h1 class="t1">Your Future Revolution</h1>
-            <div class="g1">
-                <div class="p1">
-                    <div class="frame">
-                        <img src="img/Preview - Desktops.jpg" width="338" height="205" alt="OnerOS usage"/>
-                    </div>
-                    <p>First Preview of Desktop</p>
-                    <p>Image Description 1</p>
-                    <p></p>
+        <div class="features__layout reveal">
+          <div class="features__list" role="tablist" aria-label="Feature categories">
+            <button class="features__item features__item--active" role="tab" aria-selected="true" data-feature="window-manager" id="tab-window-manager" aria-controls="panel-window-manager">
+              <span class="features__item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              Window Manager
+            </button>
+            <button class="features__item" role="tab" aria-selected="false" data-feature="themes" id="tab-themes" aria-controls="panel-themes">
+              <span class="features__item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12" r="2.5"/><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c.55 0 1-.45 1-1v-.09c0-.27-.11-.52-.29-.71a1.006 1.006 0 01-.29-.71c0-.55.45-1.01 1-1.01H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8z"/></svg>
+              </span>
+              Themes
+            </button>
+            <button class="features__item" role="tab" aria-selected="false" data-feature="applications" id="tab-applications" aria-controls="panel-applications">
+              <span class="features__item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              </span>
+              Applications
+            </button>
+            <button class="features__item" role="tab" aria-selected="false" data-feature="personalization" id="tab-personalization" aria-controls="panel-personalization">
+              <span class="features__item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 100-16 8 8 0 000 16z"/><path d="M12 14a2 2 0 100-4 2 2 0 000 4z"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+              </span>
+              Personalization
+            </button>
+            <button class="features__item" role="tab" aria-selected="false" data-feature="search" id="tab-search" aria-controls="panel-search">
+              <span class="features__item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>
+              Search
+            </button>
+          </div>
+          <div class="features__detail" role="tabpanel" id="panel-window-manager" aria-labelledby="tab-window-manager">
+            <div class="features__detail-content" id="feature-content">
+              <div class="features__detail-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3 class="features__detail-title">Window Manager</h3>
+              <p class="features__detail-desc">
+                A complete window management system with drag, resize, snap, minimize, and maximize — bringing desktop-class spatial organization to the browser.
+              </p>
+              <div class="features__detail-list">
+                <div class="features__detail-list-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Drag and resize windows freely</span>
                 </div>
-                <div class="p1">
-                    <div class="frame">
-                        <img src="img/Preview - Browser.jpg" width="338" height="205" alt="OnerOS usage"/>
-                    </div>
-                    <p>Preview Browser</p>
-                    <p>Image Description 2</p>
-                    <p></p>
+                <div class="features__detail-list-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Snap to edges and quarters</span>
                 </div>
-                <div class="p1">
-                    <div class="frame">
-                        <img src="img/Preview - Quick Setup.jpg" width="338" height="205" alt="OnerOS usage"/>
-                    </div>
-                    <p>Ready to Use</p>
-                    <p>For new users</p>
-                    <p></p>
+                <div class="features__detail-list-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Minimize, maximize, and restore</span>
                 </div>
+                <div class="features__detail-list-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Spatial animations for opening and closing</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container2">
-            <div class="txt">
-                <h2 class="t2">Customize Layout</h2>
-                <p>Text for Container 2</p>
-                <p>...</p>
-                <p>...</p>
+      </div>
+    </section>
+
+    <section class="themes" id="themes">
+      <div class="container" id="theme-showcase">
+        <div class="themes__intro reveal">
+          <div class="section-header">
+            <div class="section-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12" r="2.5"/><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c.55 0 1-.45 1-1v-.09c0-.27-.11-.52-.29-.71a1.006 1.006 0 01-.29-.71c0-.55.45-1.01 1-1.01H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8z"/></svg>
+              Themes
             </div>
-            <div class="p2">
-                <div class="frame">
-                    <img src="img/Wallpaper.jpg" width="547" height="357" alt="Customize layouts on OnerOS"/>
-                </div>
-            </div>
+            <h2 class="section-title">One System. Multiple Personalities.</h2>
+            <p class="section-desc">
+              Seven distinct visual themes — from classic desktop recreations to the original Fluent Valley design language.
+            </p>
+          </div>
+          <p class="themes__tagline">Select a theme to see it come alive</p>
         </div>
-        <div class="container3">
-            <div class="p3">
-                <div class="frame">
-                    <img src="img/Wallpaper.jpg" width="544" height="357" alt="Better Optimized OS"/>
-                </div>
-            </div>
-            <div class="txt">
-                <h2 class="t2">Powerful Usage</h2>
-                <p>Text for Container 3</p>
-                <p>...</p>
-                <p>...</p>
-            </div>
+
+        <div class="themes__selector reveal" role="group" aria-label="Theme selector">
+          <button class="themes__btn" role="button" aria-pressed="false" data-theme="0">
+            <span class="themes__btn-dot" style="background:#47b895"></span>
+            Modern
+          </button>
+          <button class="themes__btn" role="button" aria-pressed="false" data-theme="1">
+            <span class="themes__btn-dot" style="background:#60a5fa"></span>
+            Centered
+          </button>
+          <button class="themes__btn" role="button" aria-pressed="false" data-theme="2">
+            <span class="themes__btn-dot" style="background:#000080"></span>
+            Windows 95
+          </button>
+          <button class="themes__btn" role="button" aria-pressed="false" data-theme="3">
+            <span class="themes__btn-dot" style="background:#3164c5"></span>
+            Windows XP
+          </button>
+          <button class="themes__btn" role="button" aria-pressed="false" data-theme="4">
+            <span class="themes__btn-dot" style="background:#0066cc"></span>
+            macOS
+          </button>
+          <button class="themes__btn" role="button" aria-pressed="false" data-theme="5">
+            <span class="themes__btn-dot" style="background:#e95420"></span>
+            Ubuntu
+          </button>
+          <button class="themes__btn themes__btn--active" role="button" aria-pressed="true" data-theme="6">
+            <span class="themes__btn-dot" style="background:#60a5fa"></span>
+            OnerOS 2026
+            <span class="themes__btn-badge">New</span>
+          </button>
         </div>
-        <div class="container4">
-            <div id="download-os">
-                <h1 class="t1">Don't Wait</h1>
-                <h3 class="t2">Test & Review</h3>
-                <button id="download"><i class="bi bi-download"></i>Download</button>
+
+        <div class="themes__stage reveal">
+          <div class="themes__preview" role="img" aria-label="Theme preview surface">
+            <div class="themes__preview-surface">
+              <div class="themes__preview-wallpaper"></div>
+              <div class="themes__preview-topbar">
+                <div class="themes__preview-topbar-left">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  OnerOS
+                </div>
+                <div class="themes__preview-topbar-right">
+                  <span>12:00</span>
+                </div>
+              </div>
+              <div class="themes__preview-window">
+                <div class="themes__preview-window-header">
+                  <div class="themes__preview-window-controls">
+                    <span class="themes__preview-window-dot"></span>
+                    <span class="themes__preview-window-dot"></span>
+                    <span class="themes__preview-window-dot"></span>
+                  </div>
+                  <span class="themes__preview-window-title">Settings</span>
+                  <span></span>
+                </div>
+                <div class="themes__preview-window-body">
+                  <div class="themes__preview-line"></div>
+                  <div class="themes__preview-line"></div>
+                  <div class="themes__preview-line"></div>
+                  <div class="themes__preview-line"></div>
+                </div>
+              </div>
+              <div class="themes__preview-taskbar">
+                <div class="themes__preview-taskbar-icon" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                </div>
+                <div class="themes__preview-taskbar-icon themes__preview-taskbar-icon--active" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                </div>
+                <div class="themes__preview-taskbar-icon" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <div class="themes__preview-taskbar-icon" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <span class="themes__preview-clock">12:00</span>
+              </div>
             </div>
-            <div id="try-os">
-                <h1 class="t1">Hmm...</h1>
-                <h3 class="t2">Try before install</h3>
-                <button id="web-try"><i class="bi bi-globe-americas"></i>Web Preview</button>
+          </div>
+
+          <div class="themes__info">
+            <div class="themes__info-card">
+              <div class="themes__info-name">
+                OnerOS 2026
+                <span class="themes__btn-badge">New</span>
+              </div>
+              <p class="themes__info-desc">The signature Fluent Valley design — floating glass surfaces, spatial motion, and modern depth.</p>
+              <div class="themes__info-features">
+                <span class="themes__info-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Glass blur</span>
+                <span class="themes__info-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Floating surfaces</span>
+                <span class="themes__info-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Spatial depth</span>
+                <span class="themes__info-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Fluent Valley</span>
+              </div>
+              <div class="themes__accent-bar">
+                <div class="themes__accent-swatch" style="background:#60a5fa"></div>
+                <span class="themes__accent-label">#60a5fa</span>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container5">
-            <h1 class="t1">Do you like this project?</h1>
-            <h3 class="t2">Would you like to support</h3>
-            <div class="btns" style="display: flex;justify-content: center;">
-                <div class="btn pr" id="btn-pr">
-                    <svg aria-hidden="true" height="32" viewBox="1 0 16 16" version="1.1" width="32" data-view-component="true" class="pr-svg">
-                        <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
-                    </svg>
-                    <span>Pull Request</span>
-                </div>
-                <div class="btn pt" id="btn-pt">
-                    <svg width="32" height="32" viewBox="0 -4.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" class="pt-svg">
-                        <path d="M45.1355837,0 L45.1355837,246.35001 L0,246.35001 L0,0 L45.1355837,0 Z M163.657111,0 C214.65668,0 256,41.3433196 256,92.3428889 C256,143.342458 214.65668,184.685778 163.657111,184.685778 C112.657542,184.685778 71.3142222,143.342458 71.3142222,92.3428889 C71.3142222,41.3433196 112.657542,0 163.657111,0 Z"></path>
-                    </svg>
-                    <span>Patreon<span>
-                </div>
-                <div class="btn pp" id="btn-pp">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="pp-svg">
-                        <path d="M10.962 18.494c-0.219 1.2-1.087 6.794-1.344 8.375-0.019 0.113-0.063 0.156-0.188 0.156h-4.662c-0.475 0-0.819-0.412-0.756-0.869l3.663-23.244c0.094-0.6 0.631-1.056 1.25-1.056 9.519 0 10.319-0.231 12.75 0.713 3.756 1.456 4.1 4.969 2.75 8.769-1.344 3.913-4.531 5.594-8.756 5.644-2.712 0.044-4.344-0.438-4.706 1.512zM26.319 9.5c-0.113-0.081-0.156-0.113-0.188 0.081-0.125 0.712-0.319 1.406-0.55 2.1-2.494 7.113-9.406 6.494-12.781 6.494-0.381 0-0.631 0.206-0.681 0.587-1.412 8.775-1.694 10.606-1.694 10.606-0.063 0.444 0.219 0.806 0.662 0.806h3.969c0.538 0 0.981-0.394 1.088-0.931 0.044-0.337-0.069 0.381 0.9-5.706 0.288-1.375 0.894-1.231 1.831-1.231 4.438 0 7.9-1.8 8.931-7.019 0.406-2.175 0.288-4.463-1.487-5.788z"/>
-                    </svg>
-                    <span>PayPal</span>
-                </div>
+      </div>
+    </section>
+
+    <section class="apps" id="apps">
+      <div class="container" id="apps-showcase">
+        <div class="apps__intro reveal">
+          <div class="apps__preview-badge">
+            <span class="apps__preview-badge-dot" aria-hidden="true"></span>
+            Preview Experience
+          </div>
+          <div class="section-header">
+            <div class="section-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              Applications
             </div>
+            <h2 class="section-title">Open an App. Feel the System.</h2>
+            <p class="section-desc">
+              Explore the OnerOS experience through interactive previews. Each app opens inside a system-styled window.
+            </p>
+          </div>
+          <p class="apps__tagline">Select an application from the launcher</p>
         </div>
-    </center>
-    <svg class="rotated footer-padding" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,170.7C384,128,480,64,576,85.3C672,107,768,213,864,234.7C960,256,1056,192,1152,170.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-    <footer>
-        <h3>Copyright &copy; 2025 (First version released on 2023) - OnerOS Team by Klubuntu</h3>
-    </footer>
-    <script src="min/functions.min.js" type="text/javascript"></script>
+
+        <div class="apps__categories reveal" role="group" aria-label="Application categories">
+          <button class="apps__cat-btn apps__cat-btn--active" data-category="all">All Apps</button>
+          <button class="apps__cat-btn" data-category="System">System</button>
+          <button class="apps__cat-btn" data-category="Productivity">Productivity</button>
+          <button class="apps__cat-btn" data-category="Media">Media</button>
+          <button class="apps__cat-btn" data-category="Utilities">Utilities</button>
+          <button class="apps__cat-btn" data-category="Ecosystem">Ecosystem</button>
+        </div>
+
+        <div class="apps__stage reveal">
+          <div class="apps__launcher" role="listbox" aria-label="Application launcher">
+            <div class="apps__launcher-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              Applications
+            </div>
+            <div class="apps__launcher-list"></div>
+          </div>
+
+          <div class="apps__preview-area">
+            <div class="apps__window" role="img" aria-label="Application preview window">
+              <div class="apps__window-header">
+                <div class="apps__window-controls">
+                  <span class="apps__window-dot apps__window-dot--close"></span>
+                  <span class="apps__window-dot apps__window-dot--minimize"></span>
+                  <span class="apps__window-dot apps__window-dot--maximize"></span>
+                </div>
+                <div class="apps__window-title-area">
+                  <span class="apps__window-title-icon"></span>
+                  <span class="apps__window-title-text">Settings</span>
+                </div>
+                <span style="width:52px"></span>
+              </div>
+              <div class="apps__window-body"></div>
+            </div>
+
+            <div class="apps__info">
+              <div class="apps__info-header">
+                <div class="apps__info-icon"></div>
+                <div class="apps__info-name"></div>
+              </div>
+              <p class="apps__info-desc"></p>
+              <div class="apps__info-features"></div>
+              <div class="apps__info-external-badge" style="display:none"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="apps__context reveal">
+          <p class="apps__context-text">
+            Interactive concepts inspired by OnerOS Web Preview. Interfaces evolve as the system develops.
+          </p>
+          <a href="https://web-oneros.netlify.app" class="apps__live-cta" target="_blank" rel="noopener noreferrer" aria-label="Open the live OnerOS Web Preview in a new tab">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Try the live Web Preview
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview" id="preview">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Web Preview
+          </div>
+          <h2 class="section-title">OnerOS Web Preview 3.1.0</h2>
+          <p class="section-desc">
+            Experience OnerOS directly in your browser. Window management, applications, themes — all running live.
+          </p>
+        </div>
+        <div class="preview__grid stagger">
+          <a href="https://web-oneros.netlify.app" class="preview__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="preview__card-image preview__card-image--left">
+              <img src="/img/Preview - Win95.jpg" alt="OnerOS running Win95 theme with WinSync and Google apps" width="400" height="225" loading="lazy">
+            </div>
+            <div class="preview__card-body">
+              <h3 class="preview__card-title">Classic Themes</h3>
+              <p class="preview__card-desc">Run WinSync, Google, and more inside authentic Windows 95, XP, macOS, and Ubuntu themes.</p>
+              <span class="preview__card-tag">7 Themes</span>
+            </div>
+          </a>
+          <a href="https://web-oneros.netlify.app" class="preview__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="preview__card-image">
+              <img src="/img/Preview - Apps.jpg" alt="OnerOS application launcher showing Settings, Personalization, and system apps" width="400" height="225" loading="lazy">
+            </div>
+            <div class="preview__card-body">
+              <h3 class="preview__card-title">Application Launcher</h3>
+              <p class="preview__card-desc">Access Settings, Personalization, Google, Facebook, Bing, ReVideeo, and more from the Start Menu.</p>
+              <span class="preview__card-tag">15+ Apps</span>
+            </div>
+          </a>
+          <a href="https://web-oneros.netlify.app" class="preview__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="preview__card-image">
+              <img src="/img/Preview - Personalization.jpg" alt="OnerOS Personalization settings with 7 themes, wallpapers, and accent colors" width="400" height="225" loading="lazy">
+            </div>
+            <div class="preview__card-body">
+              <h3 class="preview__card-title">Personalization</h3>
+              <p class="preview__card-desc">Switch between 7 themes, choose wallpapers, and set accent colors — all in real-time.</p>
+              <span class="preview__card-tag">Fluent Valley</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ecosystem" id="ecosystem">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            Ecosystem
+          </div>
+          <h2 class="section-title">A Growing Ecosystem</h2>
+          <p class="section-desc">
+            OnerOS is part of a broader project ecosystem. Explore the applications and tools built alongside it.
+          </p>
+        </div>
+        <div class="ecosystem__grid stagger">
+          <a href="https://revideeo.app" class="ecosystem__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="ecosystem__card-header">
+              <div class="ecosystem__card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              </div>
+              <div>
+                <div class="ecosystem__card-name">ReVideeo</div>
+                <div class="ecosystem__card-category">Media</div>
+              </div>
+            </div>
+            <p class="ecosystem__card-desc">A media application within the OnerOS ecosystem for video content.</p>
+            <span class="ecosystem__card-link">
+              Visit project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="ecosystem__card-external">(external)</span>
+            </span>
+          </a>
+          <a href="https://reimaage-app.vercel.app/" class="ecosystem__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="ecosystem__card-header">
+              <div class="ecosystem__card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              </div>
+              <div>
+                <div class="ecosystem__card-name">ReImaage</div>
+                <div class="ecosystem__card-category">Media</div>
+              </div>
+            </div>
+            <p class="ecosystem__card-desc">An image and media application within the OnerOS ecosystem.</p>
+            <span class="ecosystem__card-link">
+              Visit project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="ecosystem__card-external">(external)</span>
+            </span>
+          </a>
+          <a href="https://vod.itvt.xyz" class="ecosystem__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="ecosystem__card-header">
+              <div class="ecosystem__card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </div>
+              <div>
+                <div class="ecosystem__card-name">iVOD</div>
+                <div class="ecosystem__card-category">Video on Demand</div>
+              </div>
+            </div>
+            <p class="ecosystem__card-desc">A video-on-demand platform within the OnerOS ecosystem.</p>
+            <span class="ecosystem__card-link">
+              Visit project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="ecosystem__card-external">(external)</span>
+            </span>
+          </a>
+          <a href="https://calculator-a.vercel.app/" class="ecosystem__card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="ecosystem__card-header">
+              <div class="ecosystem__card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="8" y1="18" x2="8" y2="18.01"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+              </div>
+              <div>
+                <div class="ecosystem__card-name">Calculator</div>
+                <div class="ecosystem__card-category">Utility</div>
+              </div>
+            </div>
+            <p class="ecosystem__card-desc">A calculator utility within the OnerOS ecosystem.</p>
+            <span class="ecosystem__card-link">
+              Visit project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <span class="ecosystem__card-external">(external)</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="opensource" id="open-source">
+      <div class="container">
+        <div class="opensource__layout">
+          <div class="opensource__info reveal">
+            <div class="section-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Open Source
+            </div>
+            <h2 class="section-title">Built in the Open</h2>
+            <p class="section-desc" style="max-width:none">
+              OnerOS is open-source under GPL-3.0. The codebase is available for review,
+              contribution, and learning. Built with React 18 and TypeScript.
+            </p>
+            <div class="opensource__stats">
+              <div class="opensource__stat">
+                <div class="opensource__stat-value">GPL-3.0</div>
+                <div class="opensource__stat-label">License</div>
+              </div>
+              <div class="opensource__stat">
+                <div class="opensource__stat-value">v3.1.0</div>
+                <div class="opensource__stat-label">Current Version</div>
+              </div>
+              <div class="opensource__stat">
+                <div class="opensource__stat-value">7</div>
+                <div class="opensource__stat-label">Visual Themes</div>
+              </div>
+              <div class="opensource__stat">
+                <div class="opensource__stat-value">15</div>
+                <div class="opensource__stat-label">Applications</div>
+              </div>
+            </div>
+          </div>
+          <div class="opensource__actions reveal">
+            <a href="https://github.com/OnerOS-project" class="opensource__action" target="_blank" rel="noopener noreferrer">
+              <div class="opensource__action-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="opensource__action-text">
+                <div class="opensource__action-title">GitHub Repository</div>
+                <div class="opensource__action-desc">Browse source code, issues, and releases</div>
+              </div>
+              <svg class="opensource__action-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="https://github.com/OnerOS-Project/Web-Preview/pulls" class="opensource__action" target="_blank" rel="noopener noreferrer">
+              <div class="opensource__action-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><path d="M6 9v12"/></svg>
+              </div>
+              <div class="opensource__action-text">
+                <div class="opensource__action-title">Contributing</div>
+                <div class="opensource__action-desc">Submit pull requests and help improve OnerOS</div>
+              </div>
+              <svg class="opensource__action-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="https://web-oneros.netlify.app" class="opensource__action" target="_blank" rel="noopener noreferrer">
+              <div class="opensource__action-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <div class="opensource__action-text">
+                <div class="opensource__action-title">Try Web Preview</div>
+                <div class="opensource__action-desc">Experience OnerOS 3.1.0 Fluent Valley live</div>
+              </div>
+              <svg class="opensource__action-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="/assets/logo.svg" alt="OnerOS" width="140" height="47" class="footer__brand-logo">
+          </div>
+          <p class="footer__brand-desc">An open-source web operating system experience with window management, themed applications, and the Fluent Valley design language.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Product</h4>
+          <nav class="footer__links" aria-label="Product links">
+            <a href="#features" class="footer__link">Features</a>
+            <a href="#themes" class="footer__link">Themes</a>
+            <a href="#apps" class="footer__link">Apps</a>
+            <a href="#preview" class="footer__link">Web Preview</a>
+            <a href="#ecosystem" class="footer__link">Ecosystem</a>
+            <a href="#open-source" class="footer__link">Open Source</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Project</h4>
+          <nav class="footer__links" aria-label="Project links">
+            <a href="https://github.com/OnerOS-project" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/OnerOS-Project/Web-Preview/pulls" class="footer__link" target="_blank" rel="noopener noreferrer">Contributing</a>
+            <a href="https://github.com/OnerOS-project" class="footer__link" target="_blank" rel="noopener noreferrer">Issues</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Community</h4>
+          <nav class="footer__links" aria-label="Community links">
+            <a href="https://discord.gg/meKqTdUDDm" class="footer__link" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://reddit.com/r/OnerOS" class="footer__link" target="_blank" rel="noopener noreferrer">Reddit</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025-2026 OnerOS Project by Klubuntu. Licensed under GPL-3.0.</span>
+        <div class="footer__social">
+          <a href="https://github.com/OnerOS-project" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://discord.gg/meKqTdUDDm" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </a>
+          <a href="https://reddit.com/r/OnerOS" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 01-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 01.042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 014.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 01.14-.197.35.35 0 01.238-.042l2.906.617a1.214 1.214 0 011.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 00-.231.094.33.33 0 000 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 000-.463.327.327 0 00-.463 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 00-.202-.094z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo" aria-label="OnerOS home">
+      <img src="/assets/logo.svg" alt="OnerOS" width="100" height="33" class="nav__logo-img">
+    </a>
+    <div class="nav__divider" aria-hidden="true"></div>
+    <div class="nav__links" id="nav-links">
+      <a href="#features" class="nav__link nav__link--active">Features</a>
+      <a href="#themes" class="nav__link">Themes</a>
+      <a href="#apps" class="nav__link">Apps</a>
+      <a href="#preview" class="nav__link">Preview</a>
+      <a href="#ecosystem" class="nav__link">Ecosystem</a>
+      <a href="#open-source" class="nav__link">Open Source</a>
+    </div>
+    <button class="nav__search-trigger" id="search-trigger" aria-label="Search (Ctrl+K)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Search
+      <kbd>Ctrl K</kbd>
+    </button>
+    <button class="nav__mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-label="Search" aria-modal="true">
+    <div class="search-panel" id="search-panel">
+      <div class="search-panel__input-wrap">
+        <svg class="search-panel__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-panel__input" id="search-input" placeholder="Search features, projects..." autocomplete="off" spellcheck="false">
+        <span class="search-panel__shortcut">ESC</span>
+      </div>
+      <div class="search-panel__results" id="search-results"></div>
+      <div class="search-panel__footer">
+        <span><kbd>&uarr;</kbd><kbd>&darr;</kbd> Navigate</span>
+        <span><kbd>Enter</kbd> Open</span>
+        <span><kbd>Esc</kbd> Close</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/apps-showcase.js"></script>
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/theme-showcase.js"></script>
 </body>
 </html>

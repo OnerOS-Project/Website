@@ -1,0 +1,251 @@
+# OnerOS -- Complete Documentation
+
+> OnerOS is an open-source, web-based operating system experience that brings a full desktop-like environment to the browser. It features window management, 7 visual themes (Fluent Valley, Modern, Centered, Win95, WinXP, macOS, Ubuntu), 15+ applications, Spotlight-style global search, and a unique Fluent Valley design language. Built with Vite, vanilla HTML/CSS/JavaScript, and zero runtime dependencies. Created by Klubuntu (https://klubuntu.eu.org). Licensed under GPL-3.0.
+
+## Quick Start
+
+### Try the Live Experience
+
+Open [https://web-oneros.netlify.app](https://web-oneros.netlify.app) in any modern browser. No installation required.
+
+### Run the Website Locally
+
+```bash
+git clone https://github.com/OnerOS-project/Website.git
+cd Website
+npm install
+npm run dev
+```
+
+The development server starts at `http://localhost:5173`.
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+Production output is placed in `dist/`. Preview at `http://localhost:4173`.
+
+## What is OnerOS
+
+OnerOS is a web-based desktop environment that simulates a full operating system experience in the browser. It is NOT a real operating system -- it is a browser-based experience that feels like one.
+
+### Key Features
+
+- **Window Manager** -- open, close, focus, drag, resize, maximize, snap windows
+- **7 Visual Themes** -- Fluent Valley (default), Modern, Centered, Windows 95, Windows XP, macOS, Ubuntu
+- **15+ Applications** -- Settings, Personalization, DevZone, Linux Mode (terminal), MPlayer, Calculator, Tools, WinSync, KDialer, and ecosystem apps
+- **Global Search** -- Spotlight-inspired Cmd/Ctrl+K search across all apps, settings, and features
+- **Personalization** -- change themes, wallpapers, and accent colors in real-time
+- **Fluent Valley Design Language** -- original design system with glass surfaces, spatial depth, and system-inspired motion
+
+### Architecture (Web Preview)
+
+- Built with React 18 and TypeScript
+- Centralized application registry
+- Modular theme system with CSS custom properties
+- Window management with drag, resize, snap, minimize, maximize
+- Boot sequence with loading screen
+
+### Architecture (Website)
+
+- Built with Vite (vanilla HTML/CSS/JavaScript)
+- Zero runtime dependencies
+- Fluent Valley design token system (colors, typography, spacing, shadows, motion, surfaces)
+- Interactive Apps Showcase with live previews
+- Theme Showcase with 7 interactive theme previews
+- Spotlight-style global search (Cmd/Ctrl+K)
+- Responsive design (1440px, 1024px, 768px, 480px, 360px)
+- Reduced motion support (`prefers-reduced-motion`)
+- Keyboard-accessible throughout
+
+## Themes
+
+OnerOS ships with 7 visual themes. Each theme transforms the entire interface.
+
+| Theme | Accent Color | Style |
+|---|---|---|
+| Fluent Valley (OnerOS 2026) | #60a5fa | Glass blur, floating surfaces, spatial depth |
+| Modern | #47b895 | Clean, glass surfaces, subtle depth |
+| Centered | #60a5fa | Floating taskbar, centered layout |
+| Windows 95 | #000080 | Classic teal desktop, gray UI panels |
+| Windows XP | #3164c5 | Luna blue theme, gradient surfaces |
+| macOS | #0066cc | Traffic light controls, frosted glass |
+| Ubuntu | #e95420 | Aubergine palette, orange accent |
+
+## Applications
+
+### System
+
+- **Settings** -- Configure system preferences, display, audio, network, and application settings
+- **Personalization** -- Customize wallpapers, accent colors, and themes
+- **Tools** -- System utilities including screenshot, monitor, clipboard, recorder, color picker, and notes
+
+### Productivity
+
+- **DevZone** -- Developer tools including JSON formatter, Base64 encoder, color picker, and code snippets
+- **Linux Mode** -- A simulated Linux terminal with 24+ built-in commands
+
+### Media
+
+- **MPlayer** -- Music player with vinyl animation, playlist management, and audio visualizer
+
+### Utilities
+
+- **Calculator** -- Fully functional calculator with basic arithmetic operations
+- **WinSync** -- Windows sync tools including clipboard, file transfer, QR codes, links, and notes
+- **KDialer** -- Phone dialer with contacts management and recent calls history
+
+### Ecosystem (External)
+
+- **ReVideeo** ([revideeo.app](https://revideeo.app)) -- Open-source video editor
+- **ReImaage** ([reimaage-app.vercel.app](https://reimaage-app.vercel.app/)) -- Open-source image editor
+- **iVOD** ([vod.itvt.xyz](https://vod.itvt.xyz)) -- Video-on-demand platform
+- **Calculator** ([calculator-a.vercel.app](https://calculator-a.vercel.app/)) -- Standalone calculator app
+- **Google** -- Web search in an OnerOS window
+- **Facebook** -- Social media in an OnerOS window
+- **Bing** -- Microsoft Bing search in an OnerOS window
+
+## Design System
+
+The website uses the Fluent Valley design language adapted for web.
+
+### Design Tokens
+
+- **Colors** -- accent (#47b895 teal), backgrounds (#0f1115 dark), text hierarchy, borders
+- **Typography** -- System font stack, 14px to 48px scale
+- **Spacing** -- 4px base scale (space-1 through space-32)
+- **Shadows** -- 5-level elevation system (elevation-0 through elevation-4)
+- **Motion** -- 4-tier hierarchy (micro 100ms, small 200ms, medium 350ms, large 500ms)
+- **Surfaces** -- Base, raised, elevated, floating, glass (with backdrop-filter support)
+
+### Surface Primitives
+
+- `.surface` -- base card with border and hover transition
+- `.surface--elevated` -- shadow and lift on hover
+- `.surface--glass` -- backdrop blur with glass border
+- `.surface--interactive` -- scale-down on press
+- `.reveal` / `.reveal--visible` -- intersection observer scroll reveal
+- `.stagger` -- staggered reveal delays
+
+## Project Structure
+
+```
+Website/
+  index.html                 # Main page (single-page website)
+  vite.config.js             # Vite configuration
+  package.json               # Project metadata
+  sitemap.xml                # Sitemap for oneros.in
+  netlify.toml               # Netlify deployment config
+  llms.txt                   # LLM-friendly project summary
+  llms-full.txt              # This file -- complete documentation
+  public/
+    favicon.ico
+    robots.txt
+    og-image.svg             # Open Graph social sharing image (1200x630)
+    404.html
+    assets/
+      logo.svg               # Primary SVG logo
+      logo-mono.svg          # Monochrome variant
+      logo-mark.svg          # Compact mark
+    img/
+      hero-preview.png       # Hero section screenshot
+      Preview - Win95.jpg
+      Preview - Personalization.jpg
+      Wallpaper.jpg
+  css/
+    tokens/                  # Design tokens
+      colors.css
+      typography.css
+      spacing.css
+      shadows.css
+      motion.css
+      surfaces.css
+    components/              # Reusable components
+      navigation.css         # Floating dock nav
+      search.css             # Spotlight search overlay
+      surfaces.css           # Surface primitives + reveal
+    sections/                # Section-specific styles
+      hero.css
+      features.css
+      themes.css
+      apps.css
+      preview.css
+      ecosystem.css
+      opensource.css
+      footer.css
+    globals.css              # Reset + base styles
+    responsive.css           # Responsive overrides
+  js/
+    app.js                   # Core: nav, search, features, scroll reveal
+    apps.js                  # Application data model (ES module)
+    apps-showcase.js         # Interactive app launcher + previews
+    theme-showcase.js        # Interactive 7-theme preview
+  404.html                   # Custom 404 page
+```
+
+## Website Sections
+
+1. **Hero** -- Full-viewport brand entrance with OnerOS logo, tagline, CTAs, and Fluent Valley screenshot
+2. **Features** -- Interactive tab-based feature explorer (Window Manager, Themes, Applications, Personalization, Search)
+3. **Themes** -- 7-theme showcase with live preview surface that transitions between themes
+4. **Apps** -- Interactive application launcher with 7 rich previews (Settings, Personalization, DevZone, Linux Mode, MPlayer, Calculator, ReVideeo) and a functional calculator
+5. **Web Preview** -- Three showcase cards linking to the live OnerOS experience
+6. **Ecosystem** -- Project cards for ReVideeo, ReImaage, iVOD, Calculator
+7. **Open Source** -- Stats, GitHub link, contributing info
+8. **Footer** -- Links, social media, copyright
+
+## SEO and Social
+
+- **Title:** OnerOS -- An Open-Source Web Operating System Experience
+- **Description:** Window management, 7 visual themes, built-in applications, and the Fluent Valley design language -- all running in your browser.
+- **Canonical URL:** https://oneros.in
+- **Open Graph:** title, description, image (1200x630 SVG), site_name, type
+- **Twitter Card:** summary_large_image
+- **Favicon:** /favicon.ico (ICO format from oneros.in)
+- **robots.txt:** allows all crawlers
+- **sitemap.xml:** single page entry for https://oneros.in/
+
+## Technical Details
+
+### Performance
+
+- Total bundle (gzipped): ~28 KB (CSS + JS)
+- Zero runtime dependencies
+- Build time: ~110ms
+- Static deployment on Netlify
+
+### Accessibility
+
+- Semantic HTML (header, main, nav, footer, section)
+- ARIA labels on interactive elements
+- Keyboard navigation throughout (search, features, themes, apps)
+- Focus-visible states on all interactive elements
+- `prefers-reduced-motion` support
+- Minimum 44px touch targets
+
+### Responsive Breakpoints
+
+- 1440px: Full layout
+- 1024px: Adaptive grid
+- 768px: Stacked layout, hamburger navigation
+- 480px: Compact layout
+- 360px: Minimum viable layout
+
+## Author
+
+- [Klubuntu](https://klubuntu.eu.org): Creator and maintainer of the OnerOS project
+
+## Links
+
+- **Website:** [https://oneros.in](https://oneros.in)
+- **Web Preview:** [https://web-oneros.netlify.app](https://web-oneros.netlify.app)
+- **GitHub:** [https://github.com/OnerOS-project](https://github.com/OnerOS-project)
+- **Discord:** [https://discord.gg/meKqTdUDDm](https://discord.gg/meKqTdUDDm)
+- **Reddit:** [https://reddit.com/r/OnerOS](https://reddit.com/r/OnerOS)
+
+## License
+
+GPL-3.0 -- Copyright 2025-2026 OnerOS Project by Klubuntu (https://klubuntu.eu.org).

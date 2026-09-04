@@ -1,0 +1,34 @@
+:root {
+  --color-accent: #47b895;
+  --color-accent-dark: #3a9b7a;
+  --color-accent-light: #5cd4a8;
+  --color-accent-hover: #3a9b7a;
+  --color-accent-active: #2e8a6a;
+  --color-accent-subtle: rgba(71, 184, 149, 0.12);
+  --color-accent-glow: rgba(71, 184, 149, 0.25);
+
+  --bg-primary: #0f1115;
+  --bg-secondary: #181a20;
+  --bg-tertiary: #22252e;
+  --bg-quaternary: #2a2d38;
+
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  --fv-background: var(--bg-primary);
+  --fv-surface: var(--bg-secondary);
+  --fv-surface-elevated: var(--bg-tertiary);
+  --fv-surface-floating: var(--bg-quaternary);
+  --fv-surface-overlay: rgba(0, 0, 0, 0.6);
+}

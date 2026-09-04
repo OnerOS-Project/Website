@@ -1,0 +1,37 @@
+# OnerOS
+
+> OnerOS is an open-source, web-based operating system experience. It features window management, 7 visual themes (Fluent Valley, Modern, Centered, Win95, WinXP, macOS, Ubuntu), built-in applications, and a Spotlight-style global search -- all running in the browser. The project is built with Vite, vanilla HTML/CSS/JavaScript, and has zero runtime dependencies. Created by Klubuntu (https://klubuntu.eu.org).
+
+## Try It Live
+
+- [OnerOS Web Preview 3.1.0](https://web-oneros.netlify.app): The live, fully interactive OnerOS experience in your browser
+
+## Official Website
+
+- [OnerOS Website](https://oneros.in): Product website with features, theme showcase, app previews, and ecosystem overview
+
+## Documentation
+
+- [GitHub Repository](https://github.com/OnerOS-project): Source code, issues, releases, and project overview
+- [Contributing](https://github.com/OnerOS-Project/Web-Preview/pulls): Submit pull requests and help improve OnerOS
+
+## Ecosystem
+
+- [ReVideeo](https://revideeo.app): Open-source video editor, media application in the OnerOS ecosystem
+- [ReImaage](https://reimaage-app.vercel.app/): Open-source image editor, media application in the ecosystem
+- [iVOD](https://vod.itvt.xyz): Video-on-demand platform, VOD and live broadcast
+
+## Community
+
+- [Discord](https://discord.gg/meKqTdUDDm): Join the OnerOS community on Discord
+- [Reddit](https://reddit.com/r/OnerOS): OnerOS community on Reddit
+
+## Author
+
+- [Klubuntu](https://klubuntu.eu.org): Creator and maintainer of the OnerOS project
+
+## Optional
+
+- [Fluent Valley Design Language](https://oneros.in/#themes): Explore all 7 OnerOS visual themes interactively
+- [Applications Showcase](https://oneros.in/#apps): Browse and preview OnerOS applications
+- [Open Source](https://oneros.in/#open-source): License (GPL-3.0), contribution info, and project stats

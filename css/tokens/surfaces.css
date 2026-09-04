@@ -1,0 +1,38 @@
+:root {
+  --fv-surface-base: var(--bg-primary);
+  --fv-surface-raised: var(--bg-secondary);
+  --fv-surface-elevated: var(--bg-tertiary);
+  --fv-surface-floating: var(--bg-quaternary);
+  --fv-surface-overlay: var(--fv-surface-overlay);
+
+  --fv-surface-card: var(--bg-secondary);
+  --fv-surface-panel: var(--bg-secondary);
+  --fv-surface-dialog: var(--bg-tertiary);
+
+  --fv-glass-opacity: 0.75;
+  --fv-glass-blur: 16px;
+  --fv-glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --fv-glass-bg: rgba(15, 17, 21, 0.75);
+  --fv-surface-glass: var(--fv-glass-bg);
+
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  :root {
+    --fv-glass-opacity: 0.65;
+  }
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  :root {
+    --fv-glass-blur: 0px;
+    --fv-glass-opacity: 0.92;
+  }
+}

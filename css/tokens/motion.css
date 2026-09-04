@@ -1,0 +1,43 @@
+:root {
+  --fv-duration-instant: 0ms;
+  --fv-duration-fast: 100ms;
+  --fv-duration-normal: 200ms;
+  --fv-duration-slow: 350ms;
+  --fv-duration-slower: 500ms;
+
+  --fv-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --fv-ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --fv-ease-accelerate: cubic-bezier(0.4, 0, 1, 1);
+  --fv-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --fv-transition-fast: 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fv-transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fv-transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --surface-enter: opacity var(--fv-duration-slow) var(--fv-ease-decelerate),
+                   transform var(--fv-duration-slow) var(--fv-ease-decelerate);
+  --surface-exit: opacity var(--fv-duration-normal) var(--fv-ease-accelerate),
+                  transform var(--fv-duration-normal) var(--fv-ease-accelerate);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --fv-duration-instant: 0ms;
+    --fv-duration-fast: 0ms;
+    --fv-duration-normal: 0ms;
+    --fv-duration-slow: 0ms;
+    --fv-duration-slower: 0ms;
+
+    --fv-transition-fast: 0ms;
+    --fv-transition-normal: 0ms;
+    --fv-transition-slow: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
